@@ -50,6 +50,31 @@ public class LojaPage extends LojaElementMap {
     }
 
     public void ValidarProdutoCarrinho() {
+        waiting = new WebDriverWait(TestRunner.getDriver(), 10);
+        waiting.until(ExpectedConditions.visibilityOfAllElements(validarProduto));
+
         validarProduto.isDisplayed();
+    }
+
+    public void comprarVinho() {
+        waiting = new WebDriverWait(TestRunner.getDriver(), 10);
+        waiting.until(ExpectedConditions.visibilityOfAllElements(btnComprar));
+
+        btnComprar.click();
+    }
+
+    public void botaoProsseguir() {
+        waiting = new WebDriverWait(TestRunner.getDriver(), 10);
+        waiting.until(ExpectedConditions.visibilityOfAllElements(btnProsseguir));
+
+        btnProsseguir.click();
+
+    }
+
+    public void validarCompra() {
+        waiting = new WebDriverWait(TestRunner.getDriver(), 10);
+        waiting.until(ExpectedConditions.visibilityOfAllElements(seu_pedido));
+
+        seu_pedido.isDisplayed();
     }
 }

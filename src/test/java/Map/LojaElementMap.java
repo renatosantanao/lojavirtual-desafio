@@ -30,4 +30,13 @@ public class LojaElementMap {
 
     @FindBy(xpath = "//h2[contains(text(),'Trius Cabernet France 2011')]")
     protected WebElement validarProduto;
+
+    @FindBy(linkText = "Comprar")
+    protected WebElement btnComprar;
+
+    @FindBy(xpath = "//button[@class='btn btn-primary btn-lg btn-block']")
+    protected WebElement btnProsseguir;
+
+    @FindBy(xpath = "//h2[contains(text(),'Seu pedido')]")
+    protected WebElement seu_pedido;
 }

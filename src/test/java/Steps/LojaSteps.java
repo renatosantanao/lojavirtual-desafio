@@ -50,4 +50,22 @@ public class LojaSteps {
         lojaPage.ValidarProdutoCarrinho();
     }
 
+    @And("clico no botao comprar")
+    public void clicarEmComprar(){
+        LojaPage lojaPage = new LojaPage();
+        lojaPage.comprarVinho();
+    }
+
+    @Then ("clico no botao proseguir")
+    public void clicarProsseguir(){
+        LojaPage lojaPage = new LojaPage();
+        lojaPage.botaoProsseguir();
+    }
+
+    @And ("visualizo a pagina detalhe da compra")
+    public void validarDetalheCompra(){
+        LojaPage lojaPage = new LojaPage();
+        lojaPage.validarCompra();
+    }
+
 }
