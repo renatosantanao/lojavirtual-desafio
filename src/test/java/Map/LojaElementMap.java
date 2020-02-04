@@ -27,4 +27,7 @@ public class LojaElementMap {
 
     @FindBy(linkText = "Adicionar ao carrinho")
     protected WebElement btnAdicionar;
+
+    @FindBy(xpath = "//h2[contains(text(),'Trius Cabernet France 2011')]")
+    protected WebElement validarProduto;
 }

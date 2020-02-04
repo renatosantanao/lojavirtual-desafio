@@ -38,10 +38,16 @@ public class LojaSteps {
         lojaPage.detalheVinho();
     }
 
-    @And("clico no botão Adicionar")
+    @Then("clico no botão Adicionar")
     public void botaoAdicionar(){
         LojaPage lojaPage = new LojaPage();
-        lojaPage.adicionarAoCarrinho();
+        lojaPage.clicarBotaoAdicionar();
+    }
+
+    @And("o item será adicionado ao carrinho de compra")
+    public void adicionarProduto(){
+        LojaPage lojaPage = new LojaPage();
+        lojaPage.ValidarProdutoCarrinho();
     }
 
 }

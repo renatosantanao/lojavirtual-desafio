@@ -42,7 +42,14 @@ public class LojaPage extends LojaElementMap {
         detalhe_vinho.isDisplayed();
     }
 
-    public void adicionarAoCarrinho() {
+    public void clicarBotaoAdicionar() {
+        waiting = new WebDriverWait(TestRunner.getDriver(), 10);
+        waiting.until(ExpectedConditions.visibilityOfAllElements(btnAdicionar));
+
         btnAdicionar.click();
+    }
+
+    public void ValidarProdutoCarrinho() {
+        validarProduto.isDisplayed();
     }
 }
