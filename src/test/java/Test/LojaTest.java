@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/Features/Loja.feature",
-        tags = {"@adicionar"},
+        tags = {"@detalhecompra"},
         glue = {""},
         monochrome = true,
         dryRun = false)
