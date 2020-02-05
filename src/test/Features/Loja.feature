@@ -34,6 +34,4 @@ Feature: Loja Virtual
     And clico no botão Adicionar
     Then clico no botao proseguir
     And preencho todos os campos obrigatórios, exceto o campo <nome>
-    And o campo <telefone> deve aceitar somente números
-    But deve desconsiderar a forma de pagamento
     And o botão <Finalizar> encerra o processo e a mensagem de agradecimento exibida

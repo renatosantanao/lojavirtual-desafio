@@ -3,6 +3,7 @@ package Support;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.util.concurrent.TimeUnit;
@@ -13,10 +14,10 @@ public class TestRunner {
 
     @Before
     public static WebDriver browser(){
-        System.setProperty("webdriver.gecko.driver","src/test/resources/geckodriver");
+        System.setProperty("webdriver.chrome.driver","src/test/resources/chromedriver");
 
         //iniciando o driver
-        driver = new FirefoxDriver();
+        driver = new ChromeDriver();
         driver.manage().window().maximize();
 
         //sistema aguarda 10 segundos até que o browser seja aberto

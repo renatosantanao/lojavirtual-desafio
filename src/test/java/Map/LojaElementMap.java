@@ -20,13 +20,13 @@ public class LojaElementMap {
     protected WebElement clicar_vinho;
     @FindBy(xpath = "//div[@class='owl-carousel hero-slide owl-style owl-loaded owl-drag']")
     protected WebElement detalhe_vinho;
-    @FindBy(linkText = "Adicionar ao carrinho")
-    protected WebElement btnAdicionar;
     @FindBy(xpath = "(//a[contains(text(),'Adicionar ao carrinho')])[2]")
+    protected WebElement btnAdicionar;
+    @FindBy(xpath = "//h2[contains(text(),'Trius Cabernet France 2011')]")
     protected WebElement validarProduto;
     @FindBy(linkText = "Comprar")
     protected WebElement btnComprar;
-    @FindBy(xpath = "//button[@class='btn btn-primary btn-lg btn-block']")
+    @FindBy(xpath = "//button[@onclick=\"window.location='checkout.html'\"]")
     protected WebElement btnProsseguir;
     @FindBy(xpath = "//h2[contains(text(),'Seu pedido')]")
     protected WebElement seu_pedido;
