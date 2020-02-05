@@ -2,4 +2,37 @@ Gestão de bugs:
 
 - Funcionalidade: Loja Virtual
 
+Bug01: Ao acessar a loja virtual, clicar no menu loja, depois clicar no botão adicionar o vinho selecionado. No carrinho de compra já consta dois vinhos que não foi adicionado por mim.
+
+Bug02: Ao acessar a loja virtual, clicar no menu loja, depois clicar sobre algum vinho, será direcionado para o detalhe do vinho e clicar no botão comprar o vinho. No carrinho de compra já consta dois vinhos que não foi adicionado por mim.
+
+Bug03: Ao acessar a loja virtual, clicar no menu loja, depois clicar no botão adicionar o vinho selecionado e repetir os passos anterior mais uma vez. Não está adicionando mais um vinho ao carrinho de compra. Sempre continua com a quantidade 01.
+
+Bug04: No carrinho de compra está permitindo colocar a quantidade igual a 0 e quando clico em prosseguir, no detalhe da compra indica a quantidade 01 para o vinho que coloquei igual a 0.
+
+Bug05: Botão remover do carrinho de compra não funciona para nenhum dos itens adicionados.
+
+Bug06: Sempre que acesso o carrinho de compra possui os dois vinhos da loja já adicionado.
+
+Bug07: Campo quantidade do carrinho de compra só permite 9 itens por quantidade. Se tento digitar 10, o campo retorna para 0.
+
+Bug08: Se coloco a quantidade igual a 0 dos itens do carrinho e clico no botão [Prosseguir], está permitindo seguir com a compra.
+
+Bug09: Ao adicionar os dois vinhos disponível da loja e deixar a quantidade igual a 1 de cada, clicar em prosseguir. No detalhe da compra está constanto o subtotal errado, conforme o preço de cada vinho.
+
+Bug10; Campo telefone está permitindo inserir letras e caracter especial.
+
+Bug11: Campo e-mail está permitindo inserir qualquer texto diferente de e-mail.
+
+Bug12: Menu Vinho está sendo direcionado para a pagina da loja.
+
+
 - Funcionalidade: Contato
+
+Bug13: Ao acessar a página de contato está permitindo clicar no botão enviar sem preencher nenhum dos campos da tela.
+
+Bug14: Ao preencher todos os campos da página de contato e clicar em enviar, retorna página de erro 405.
+
+Bug15; Campo telefone está permitindo inserir letras e caracter especial.
+
+Bug16: Campo e-mail está permitindo inserir qualquer texto diferente de e-mail.
