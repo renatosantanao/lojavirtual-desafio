@@ -54,12 +54,6 @@ public class LojaPage extends LojaElementMap {
     }
 
     public void clicarBotaoAdicionar() throws Exception {
-//        this.moverMouseSobreElemento(btnAdicionar);
-//        waiting = new WebDriverWait(TestRunner.getDriver(), 10);
-//        waiting.until(ExpectedConditions.elementToBeClickable(btnAdicionar));
-//
-//        btnAdicionar.click();
-
         JavascriptExecutor executor = (JavascriptExecutor)TestRunner.getDriver();
         executor.executeScript("arguments[0].click();", btnAdicionar);
     }

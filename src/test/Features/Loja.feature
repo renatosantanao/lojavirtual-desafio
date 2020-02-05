@@ -2,6 +2,10 @@
 # Tags: optional
 
 Feature: Loja Virtual
+  Esta funcionalidade consiste em uma página com as opções de vinhos disponíveis
+  na loja virtual, nela deve ser possível visualizar os vinhos, navegar pelos detalhes
+  dos vinhos, adicionar ao carrinho de compras, bem como outras funções básicas.
+
   Background: Acessar home da loja virtual
     Given que eu acesso a pagina principal da loja
     When clico no menu Loja
